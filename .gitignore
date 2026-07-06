@@ -1,1 +1,13 @@
+# IDE Settings
 .vscode/
+.vs/
+
+# Compiled Binaries & Object Files
+*.exe
+*.out
+*.o
+*.obj
+
+# Build Directories
+build/
+bin/
