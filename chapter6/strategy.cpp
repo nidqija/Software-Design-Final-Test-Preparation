@@ -8,6 +8,8 @@ using namespace std;
 // Intent Define a family of algorithms, encapsulate each one, and make them interchangeable. 
 // Strategy lets the algorithm vary independently from clients that use it.
 
+    
+
 
 // Example use case for strategy design pattern:
 // 1. Payment Processing: An e-commerce application can use the Strategy pattern to handle different payment methods (e.g., credit card, PayPal, cryptocurrency). Each payment method can be encapsulated in its own strategy class, allowing the application to switch between them seamlessly.'
@@ -18,7 +20,7 @@ using namespace std;
 // 1. Flexibility: The Strategy pattern allows you to change the behavior of a class at runtime by switching between different strategies.
 // 2. Encapsulation: Each strategy is encapsulated in its own class, promoting separation of concerns and making the code easier to maintain.
 // 3. Open/Closed Principle: You can introduce new strategies without modifying existing code, adhering to the open/closed principle.
-// 4. Increased Complexity: The pattern can introduce additional classes and interfaces, which may increase the complexity of the codebase, especially for simple scenarios.
+// 4. Increased Complexity: The pattern can introduce additional classes and interfaces, which may increasez the complexity of the codebase, especially for simple scenarios.
 
 // Components of the Strategy Design Pattern:
 // 1. Strategy Interface: Defines a common interface for all supported algorithms.

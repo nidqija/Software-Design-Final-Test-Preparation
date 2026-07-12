@@ -28,6 +28,10 @@ using namespace std;
 // or pass it to the next handler in the chain.
 // 3. Client: Initiates the request and sends it to the first handler in the chain, without needing to know which handler will ultimately process it.
 
+
+// Terms in the context of this example:
+// 1. Successor: The next handler in the chain that can potentially handle the request.
+
 // The types of issues that can occur
 enum class Priority {
     LOW,

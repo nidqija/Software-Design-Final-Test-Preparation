@@ -25,7 +25,7 @@
 // 2. Terminal Expression: Implements an interpret operation associated with terminal symbols in the grammar.
 // 3. Non-Terminal Expression: Implements an interpret operation for non-terminal symbols in the grammar, typically by calling interpret on its child expressions.
 // 4. Context: Contains information that is global to the interpreter, such as variable bindings or state information.
-
+// 5. Client: Builds (or is given) an abstract syntax tree representing a particular sentence in the language and invokes the interpret operation.
 
 
 using namespace std;

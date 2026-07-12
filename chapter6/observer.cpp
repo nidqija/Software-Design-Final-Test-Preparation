@@ -26,11 +26,18 @@
 
 // Components of the Observer Design Pattern:
 // 1. Observer Interface: Defines the update method that observers must implement to receive notifications.
-// 2. Concrete Observers: Implement the Observer interface and define how they respond to updates from the subject.
+// 2. Concrete Observers: Implement the Observer interface and define how they respond to updates from the subject. It maintains a reference to the subject to access its state if needed.
 // 3. Subject Interface: Defines methods for attaching, detaching, and notifying observers.
 // 4. Concrete Subject: Implements the Subject interface and maintains a list of observers. It notifies them of state changes.
 // 5. Client: Configures the subject and observers, establishing the relationships between them.
 // 6. Collaborations: The subject and observers collaborate to ensure that changes in the subject's state are communicated to all interested observers.
+
+
+
+// Terms in the context of this example:
+// 1. Push Model: In the push model, the subject actively sends updates to its observers whenever its state changes. 
+// Observers receive the new data directly from the subject without requesting it. 
+// This model is efficient for scenarios where updates are frequent and observers need to be informed immediately.
 
 using namespace std;
 

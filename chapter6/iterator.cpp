@@ -30,6 +30,22 @@ using namespace std;
 // 4. Concrete Collection: Implements the collection interface and provides an iterator for its elements.
 
 
+// internal iterator is an iterator that is implemented within the collection class itself,
+// allowing clients to traverse the collection without needing to create a separate iterator object. 
+// It typically provides methods for iteration directly on the collection, 
+// such as forEach or map, and abstracts away the details of the traversal process.
+
+// external iterator is an iterator that is implemented as a separate object,
+// allowing clients to traverse the collection independently of the collection's internal structure.
+// It provides methods like hasNext() and next() to control the iteration process,
+// giving clients more flexibility in how they traverse the collection.
+
+
+
+// Terms in the context of this example:
+// 1. Cursor : A cursor is a pointer or reference that keeps track of the current position in a collection during iteration. 
+//   It allows the iterator to know which element to return next and helps manage the traversal state.
+
 
 // Forward declaration
 class ChannelIterator;

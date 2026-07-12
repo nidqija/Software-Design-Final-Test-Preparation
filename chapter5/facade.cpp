@@ -11,6 +11,8 @@ using namespace std;
 // 2. Facade defines a higher-level interface that makes the subsystem easier to use.
 // 3. It is a structural design pattern that provides a simplified interface to a complex subsystem.
 
+// the problem facade solves: In complex systems, 
+// clients often have to interact with multiple subsystems, which can lead to tight coupling and increased complexity. The Facade pattern provides a simplified interface that abstracts the underlying complexity, making it easier for clients to use the system without needing to understand its inner workings.
 
 
 // ============================================================================
