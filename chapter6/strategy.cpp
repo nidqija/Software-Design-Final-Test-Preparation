@@ -25,7 +25,7 @@ using namespace std;
 // Components of the Strategy Design Pattern:
 // 1. Strategy Interface: Defines a common interface for all supported algorithms.
 // 2. Concrete Strategies: Implement the Strategy interface with specific algorithms.
-// 3. Context: Maintains a reference to a Strategy object and can switch between strategies at runtime.
+// 3. Context: Maintains a reference to a Strategy object and can switch between strategies at runtime. it may also contain data that is relevant to the strategies.
 // 4. Client: Configures the Context with a specific Strategy and invokes the algorithm.
 
 

@@ -18,12 +18,18 @@
 // 3. Support for Undo/Redo: The pattern naturally supports undo and redo operations by maintaining a history of executed commands.
 // 4. Macro Commands: The pattern allows for the creation of composite commands (macros) that can execute a sequence of commands, enabling complex operations to be treated as a single command.
 
+
 // Components of the Command Design Pattern:
 // 1. Command Interface: Declares an interface for executing an operation.
 // 2. Concrete Commands: Implement the command interface and define the binding between a Receiver and an action.
 // 3. Receiver: Knows how to perform the operations associated with carrying out a request. Any class can serve as a Receiver.
 // 4. Invoker: Asks the command to carry out the request. It can store commands and execute them at a later time.
 // 5. Client: Creates a ConcreteCommand object and sets its receiver. The client is responsible for configuring the command objects and associating them with the appropriate receivers and invokers.
+
+
+// terms in the context of this example:
+// 1. the undo command : the pattern supports undo command by maintaining a history of executed commands, allowing the invoker to reverse the effects of previous commands when requested.
+// 2. composite command : the pattern allows for the creation of composite commands (macros) that can execute a sequence of commands, enabling complex operations to be treated as a single command.
 
 
 // --- The Receiver ---

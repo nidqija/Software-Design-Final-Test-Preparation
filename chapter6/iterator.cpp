@@ -95,6 +95,28 @@ public:
 };
 
 
+class MusicStreamingList : public AbstractCollection{
+    private:
+        vector<string> songs;
+
+    public:
+        void addSong(const string& song) {
+            songs.push_back(song);
+        }
+
+        size_t getSize() const {
+            return songs.size();
+        }
+
+        string getAt(size_t index) const {
+            return songs[index];
+        }
+
+        // Factory method to generate the corresponding iterator
+        unique_ptr<ChannelIterator> createIterator() override;
+};
+
+
 // ==========================================
 // 4. Concrete Iterator
 // ==========================================
@@ -135,6 +157,8 @@ int main() {
     myRadio.addChannel("102.5 FM - Jazz Smooth");
     myRadio.addChannel("89.3 FM - Indie Beats");
     myRadio.addChannel("107.9 FM - Top 40 Hits");
+
+    
 
     // Get the iterator from the collection
     unique_ptr<ChannelIterator> it = myRadio.createIterator();

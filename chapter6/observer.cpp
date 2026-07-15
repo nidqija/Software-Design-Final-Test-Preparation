@@ -33,6 +33,10 @@
 // 6. Collaborations: The subject and observers collaborate to ensure that changes in the subject's state are communicated to all interested observers.
 
 
+// Implementation Challenges:
+// 1. Observer Management: Managing the list of observers can be challenging, especially when observers are added or removed dynamically. Care must be taken to avoid issues such as dangling pointers or memory leaks.
+// 2. Notification Overhead: If there are many observers or frequent updates, the notification process can introduce performance overhead. Strategies such as batching notifications or using more efficient data structures may be needed to mitigate this.
+// 3. Circular Dependencies: Care must be taken to avoid circular dependencies between subjects and observers, which can lead to infinite loops or unexpected behavior. Proper design and testing are essential to prevent such issues.
 
 // Terms in the context of this example:
 // 1. Push Model: In the push model, the subject actively sends updates to its observers whenever its state changes. 
@@ -66,6 +70,7 @@ public:
 // ==========================================
 // 3. Concrete Subject
 // ==========================================
+// we can create more than one concrete subject if we want to have different types of data being observed.
 class WeatherStation : public Subject {
 private:
     vector<shared_ptr<Observer>> observers; // List of subscribers
@@ -97,6 +102,7 @@ public:
         notifyObservers(); // Broadcast the update
     }
 };
+
 
 
 // ==========================================
