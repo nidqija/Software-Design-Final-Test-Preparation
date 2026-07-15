@@ -22,12 +22,21 @@
 // as it requires careful management of shared state and extrinsic state.
 
 
+// Components of the Flyweight Pattern:
+// 1. Flyweight: The shared object that contains intrinsic state (state that is shared among many objects).
+// 2. Flyweight Factory: A factory that creates and manages flyweight objects, ensuring that they are shared properly.
+// 3. Context: The object that contains extrinsic state (state that is unique to each object) and references the flyweight object.
+// 4. Client: The code that uses the flyweight objects and manages their extrinsic state.
+
 using namespace std;
 
 // ==========================================
 // 1. Flyweight (Shared Intrinsic State)
 // ==========================================
 // This class contains heavy data (texture, mesh, color) that is identical for many objects.
+// the instristic state is shared among many objects, while the extrinsic state (position, size, etc.) is unique to each object.
+// this wont change for each instance of the object, so we can share it across multiple instances to save memory.
+
 class TreeType {
 private:
     string name;
@@ -77,7 +86,7 @@ unordered_map<string, shared_ptr<TreeType>> TreeFactory::treeTypes;
 // 3. Context (Unique Extrinsic State)
 // ==========================================
 // This object is very lightweight. It only contains coordinates and a pointer to the Flyweight.
-
+// this state will be modified for each instance of the object, while the shared state remains constant.
 
 class Tree {
 private:

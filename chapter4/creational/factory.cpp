@@ -74,6 +74,7 @@ public:
 class CreditCardProcessor : public PaymentProcessor {
 public:
     // Overrides the abstract factory method to produce a CreditCardPayment object
+    // subclass instantiates the product and returns it to the client
     PaymentMethod* createPaymentMethod() override {
         return new CreditCardPayment();
     }

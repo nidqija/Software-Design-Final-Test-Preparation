@@ -7,7 +7,6 @@ using namespace std;
 
 
 // Decorator Pattern Example
-
 // 1. attach additional responsibilites to an object dynamically
 // 2. provide a flexible alternative to subclassing for extending functionality
 // 3. allows behavior to be added to individual objects, without affecting the behavior of other objects from the same class
@@ -16,6 +15,17 @@ using namespace std;
 // Motivation
 // 1. if we want to add new responsibilities to an object , we can create a new subclass that extends the original class and adds the new behavior , not to the original class itself
 // 2. it is a flexible way to add behavior to an object without modifying its code or creating a new subclass for every possible combination of behaviors
+
+
+
+// Components in decorator pattern
+// 1. Component: defines the interface for objects that can have responsibilities added to them dynamically
+// 2. Concrete Component: the actual object we want to decorate later
+// 3. Decorator: maintains a reference to a Component object and defines an interface that conforms to Component's interface
+// 4. Concrete Decorators: add responsibilities to the component dynamically 
+// 5. Client: creates a Concrete Component object and wraps it with one or more Decorator objects
+
+
 
 // ==========================================
 // 1. Component Interface

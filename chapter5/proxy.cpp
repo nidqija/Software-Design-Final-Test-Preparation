@@ -18,9 +18,29 @@ using namespace std;
 // 4. smart reference proxy
 
 // consequences of implementing the proxy pattern
-// A remote proxy can hide the factthatthe objectresides in a different address space
+// A remote proxy can hide the fact that the object resides in a different address space
 // A virtual proxy can perform optimization by creating the object on demand
-// Protection proxies and smart references allow additional housekeeping.
+// Protection proxies and smart references allow additional functionality to be added when an object is accessed, 
+// such as reference counting, access control, logging, etc.
+
+
+// Components of the Proxy Pattern
+// 1. The Service Interface: Declares the interface of the Service. The proxy must follow this interface so that it can be used anywhere the service is expected.
+// 2. The Service: A class that provides some useful business logic. It is the real object that the proxy represents.
+// 3. The Proxy Class: Has a reference field that points to a service object. After processing the request, it passes the request to the service object. Usually, proxies manage the full lifecycle of service objects.
+// 4. The Client: Should work with both services and proxies via the same interface. It has no idea whether it is holding a proxy layer or a real service layer.
+
+
+// Terms in Proxy Pattern
+// 1. Copy on write : A technique where the proxy creates a copy of the object only when it is modified, 
+//    allowing multiple clients to share the same object until a modification is made.
+
+// 2. Sophisticated reference : A reference that provides additional functionality beyond a simple pointer, 
+//    such as access control, logging, or reference counting.
+
+
+
+
 
 // ============================================================================
 // 1. The Service Interface 

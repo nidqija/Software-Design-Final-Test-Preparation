@@ -8,13 +8,20 @@ using namespace std;
 // Adapter Pattern 
 // 1. Convert interface of a class into another interface that clients expect
 // 2. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces
-
+    
 
 // Consequences of implementing the Adapter Pattern:
 // 1. adapts adaptee to the trget by committing to a concrete adaptee class
 // 2. a class adaptee wont work when we want to adapt a class and all of its subclasses
 // 3. we let a signle adapter  work with many adaptees
 // 4. it makes it harder to override adaptee behavior in the adapter class
+
+
+// components of the adapter pattern
+// 1. Target: defines the domain-specific interface that Client uses
+// 2. Adaptee: defines an existing interface that needs adapting
+// 3. Adapter: adapts the interface of Adaptee to the Target interface
+// 4. Client: collaborates with objects conforming to the Target interface
 
 
 // ========================================================
