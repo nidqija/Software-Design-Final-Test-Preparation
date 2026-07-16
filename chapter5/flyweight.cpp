@@ -55,7 +55,7 @@ public:
 
 
 // ==========================================
-// 2. Flyweight Factory (Manages Flyweights)
+// 2. Flyweight x`Factory (Manages Flyweights)
 // ==========================================
 // Ensures flyweights are shared correctly and never duplicated.
 class TreeFactory {

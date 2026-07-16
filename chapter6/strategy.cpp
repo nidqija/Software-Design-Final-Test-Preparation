@@ -9,8 +9,6 @@ using namespace std;
 // Strategy lets the algorithm vary independently from clients that use it.
 
     
-
-
 // Example use case for strategy design pattern:
 // 1. Payment Processing: An e-commerce application can use the Strategy pattern to handle different payment methods (e.g., credit card, PayPal, cryptocurrency). Each payment method can be encapsulated in its own strategy class, allowing the application to switch between them seamlessly.'
 // 2. Report Format Generation: A reporting system can use the Strategy pattern to generate reports in different formats (e.g., PDF, Excel, HTML). Each format can be implemented as a separate strategy, enabling users to choose their preferred output format at runtime.

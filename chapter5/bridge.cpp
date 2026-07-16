@@ -4,6 +4,24 @@
 
 using namespace std;
 
+// 1. Bridge Pattern
+// The Bridge Pattern is a structural design pattern that decouples an abstraction from its implementation,
+// allowing the two to vary independently. It is useful when both the abstractions and their implementations should be extensible by subclassing.
+
+// Consequences for bridge pattern:
+// 1. Decouples interface and implementation, allowing them to vary independently.
+// 2. Improves extensibility by allowing new abstractions and implementations to be added without modifying existing code.
+// 3. Reduces the number of classes by avoiding a combinatorial explosion of classes for every possible combination of abstraction and implementation.
+// 4. Promotes the use of composition over inheritance, leading to more flexible designs.
+
+
+// Component in bridge pattern:
+// 1. Abstraction: Defines the abstraction's interface and maintains a reference to an object of type Implementor.
+// 2. Refined Abstraction: Extends the interface defined by Abstraction.
+// 3. Implementor: Defines the interface for implementation classes. This interface doesn't have to correspond exactly to Abstraction's interface; in fact, the two interfaces can be quite different. Typically, the Implementor interface provides only primitive operations, and Abstraction defines higher-level operations based on these primitives.
+// 4. Concrete Implementor: Implements the Implementor interface and defines its concrete implementation.
+
+
 // ==========================================
 // 1. Implementation Interface (The Details)
 // ==========================================

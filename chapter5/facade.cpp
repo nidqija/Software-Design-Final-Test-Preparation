@@ -15,6 +15,12 @@ using namespace std;
 // clients often have to interact with multiple subsystems, which can lead to tight coupling and increased complexity. The Facade pattern provides a simplified interface that abstracts the underlying complexity, making it easier for clients to use the system without needing to understand its inner workings.
 // provide a single point of access to a set of interfaces in a subsystem, making it easier for clients to interact with the system without needing to understand its internal complexities. It promotes loose coupling between the client and the subsystems, enhancing maintainability and flexibility.
 
+
+// components in facade pattern:
+// 1. Facade: Provides a simplified interface to the complex subsystem.
+// 2. Subsystems: The complex set of classes and interfaces that the Facade simplifies
+
+
 // ============================================================================
 // Subsystem Class 1: Account & DRM Verification
 // Complex backend logic managing user subscriptions and content keys.
