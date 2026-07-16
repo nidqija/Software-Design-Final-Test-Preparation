@@ -5,7 +5,7 @@
 
 // Interpreter Design Pattern
 // Given a language, define a representation forits grammar along with an
-// interpreterthat uses the representation to interpret sentences in the
+// interpreter that uses the representation to interpret sentences in the
 // language.
 
 // other example use case for interpreter design pattern:
