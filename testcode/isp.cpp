@@ -11,6 +11,8 @@ using namespace std;
 class Shape {
     public:
        virtual int area() = 0;
+
+       virtual ~Shape() = default; // setup virtual destructor by default to ensure proper cleanup of derived classes
 };
 
 
