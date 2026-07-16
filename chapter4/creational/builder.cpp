@@ -7,7 +7,7 @@ using namespace std;
 
 // 4. Builder Design Pattern
 // separate the construction of complex object from its representation so that the same construction process can create different representations.
-
+// creating an object step by step and the final step will return the object. The construction process can create different representations of an object using the same construction code.
 
 // consequences of using the Builder Design Pattern:
 // 1. Separation of Construction and Representation: The Builder pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. This promotes flexibility and reusability.

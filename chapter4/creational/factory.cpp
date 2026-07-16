@@ -8,6 +8,7 @@ using namespace std;
 // The Factory Method Pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 // It promotes loose coupling by eliminating the need to bind application-specific classes into the code. The Factory Method lets a class defer instantiation to subclasses.
 
+
 // Consequences for factory method pattern:
 // 1. eliminates the need to bind application specific classes into the code
 // 2. client might have to subclass the creator class to create a specific concrete product

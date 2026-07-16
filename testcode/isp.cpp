@@ -29,6 +29,22 @@ class Square : public Shape {
 };
 
 
+class Circle : public Shape {
+    private :
+       int radius;
+
+
+    public:
+       Circle(int r ) : radius(r){}
+
+
+       virtual int area() override {
+            return 3.14 * radius * radius;
+       }
+
+};
+
+
 class Rectangle : public Shape {
     private :
     int length;
@@ -46,6 +62,8 @@ class Rectangle : public Shape {
 
 
 
+// function that takes a pointer to Shape and prints the area of the shape
+// this function demonstrates polymorphism as it can take any derived class of Shape and call the appropriate area() function
 
 void printArea(Shape* shape){
     cout << "Area: " << shape->area() << endl;
@@ -56,9 +74,11 @@ int main(){
 
     Shape* square = new Square(5);
     Shape* rectangle = new Rectangle(4, 6);
+    Shape* circle = new Circle(3);
 
     printArea(square);
     printArea(rectangle);
+    printArea(circle);
 
 
     return 0;
