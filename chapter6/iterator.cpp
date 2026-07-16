@@ -132,9 +132,12 @@ public:
     }
 
     string next() override {
+
+        // if there is no more elements to iterate, return an empty string
         if (!hasNext()) {
             return "";
         }
+        // if there is , return the current element and move the position to the next index
         return collection.getAt(position++);
     }
 };
