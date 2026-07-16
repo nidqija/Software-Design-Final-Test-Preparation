@@ -22,6 +22,7 @@ using namespace std;
 // 3. Responsibility Sharing: Multiple handlers can share the responsibility of processing requests, allowing for more complex and nuanced handling logic.
 // 4. Potential for Unhandled Requests: If no handler in the chain can process a request, it may go unhandled, which could lead to unexpected behavior if not properly managed.
 
+
 // Components of the Chain of Responsibility Design Pattern:
 // 1. Handler Interface: Defines a method for handling requests and an optional link to the next handler in the chain.
 // 2. Concrete Handlers: Implement the handler interface and decide whether to process the request
